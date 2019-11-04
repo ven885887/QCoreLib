@@ -19,6 +19,8 @@ namespace QCoreLib.Controllers
         }
         public IActionResult Index()
         {
+
+            //Pre approval checking
             ViewData["url"] = Convert.ToString(_configuration["ImageStore:ClientLogoContainer"]);
             return View();
         }
